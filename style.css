@@ -1,12 +1,15 @@
 * {
     box-sizing: border-box;
     border: 1px solid black;
-    text-align: center;
-    vertical-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root {
-    font-size: 16px;
+    --larger-font-size: 20px;
+    --large-font-size: 18px;
+    --medium-font-size: 16px;
+    --small-font-size: 12px;
+    --smaller-font-size: 10px;
 }
 
 body {
@@ -22,17 +25,29 @@ body {
     grid-template-rows: 1fr 4fr 3fr;
     gap: 20px;
     align-items: start;
+    background-color: rgb(50,170,255);
+    color: white;
+    font-weight: bold;
+    font-size: var(--large-font-size);
+}
+
+#sidebar > * {
+    padding: 10px;
 }
 
 #sidebar #logo {
     grid-row: 1 / 2;
     height: 80px;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 10px;
 }
 
 .sidebarLink {
     height: 30px;
     display: grid;
-    grid-template-columns: 30px 1fr;
+    grid-template-columns: 60px 1fr;
+    gap: 10px;
 }
 
 #sidebar #links1 {
@@ -51,7 +66,9 @@ body {
 #header {
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 3fr;
+    padding: 10px;
+    padding-left: 30px;
 }
 
 #header #headerTop {
@@ -80,6 +97,26 @@ body {
     grid-column: 1 / 2;
     display: grid;
     grid-template-columns: 1fr 6fr;
+    font-weight: bold;
+}
+
+#headerBottomLeft #greeting {
+    display: grid;
+    align-items: center;
+}
+
+#displayPicture {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#greeting1 {
+    font-size: var(--small-font-size);
+}
+
+#greeting2 {
+    font-size: var(--larger-font-size);
 }
 
 #headerBottom #headerButtons {
@@ -89,11 +126,37 @@ body {
 #mainBody {
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
-    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-template: 1fr 1fr / 5fr 2fr;
+    gap: 10px;
+    background-color: rgb(220,220,225);
+    padding-top: 30px;
+    font-size: var(--large-font-size);
+    padding-left: 15px;
 }
 
 #mainBody #projects {
     grid-area: 1 / 1 / 3 / 2;
+}
+
+#projectCards {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+#projectCards > div {
+    height: 200px;
+    background-color: white;
+    display: grid;
+}
+
+.cardText::before {
+    content: "";
+    display: inline-block;
+    background-color: rgb(250,170,0);
+    height: 100%;
+    min-width: 5px;
 }
 
 #mainBody #announcements {

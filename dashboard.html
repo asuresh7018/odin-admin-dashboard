@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
     <link rel="stylesheet" href="style.css">
     <script src="code.js" defer></script>
 </head>
 <body>
     <div id="sidebar">
-        <div id="logo">Logo</div>
+        <div id="logo">
+            <img src="" alt="">
+            <div id="logoText"></div>
+        </div>
         <div id="links1">
             <div class="sidebarLink">
                 <img src="" alt="" id="linkImg1">
@@ -62,14 +68,44 @@
         </div>
         <div id="headerBottom">
             <div id="headerBottomLeft">
-                <div id="displayPicture">pic</div>
-                <div id="greeting">hi</div>
+                <div id="displayPicture">
+                    <svg width="60px" height="60px">
+                        <circle cx="30px" cy="30px" r="30px" stroke="black" fill="yellow" stroke-width="2px">
+                        </circle>
+                    </svg>
+                </div>
+                <div id="greeting">
+                    <div id="greeting1">Hi there,</div>
+                    <div id="greeting2">Morgan Oakley (@morgan)</div>
+                </div>
             </div>
             <div id="headerButtons">buttons!</div>
         </div>
     </div>
     <div id="mainBody">
-        <div id="projects">Projects</div>
+        <div id="projects">
+            <div id="projectHeading">Your Projects</div>
+            <div id="projectCards">
+                <div id="card1" class="card">
+                    <div class="cardText"></div>
+                </div>
+                <div id="card2" class="card">
+                    <div class="cardText"></div>
+                </div>
+                <div id="card3" class="card">
+                    <div class="cardText"></div>
+                </div>
+                <div id="card4" class="card">
+                    <div class="cardText"></div>
+                </div>
+                <div id="card5" class="card">
+                    <div class="cardText"></div>
+                </div>
+                <div id="card6" class="card">
+                    <div class="cardText"></div>
+                </div>
+            </div>
+        </div>
         <div id="announcements">Announcements</div>
         <div id="trending">Trending</div>
     </div>
