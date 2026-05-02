@@ -14,7 +14,7 @@
     <div id="sidebar">
         <div id="logo">
             <img src="" alt="">
-            <div id="logoText"></div>
+            <div id="logoText">Dashboard</div>
         </div>
         <div id="links1">
             <div class="sidebarLink">
@@ -57,20 +57,38 @@
             </div>
         </div>
     </div>
-    <div id="header">
+    <div id="header" class="hasShadow">
         <div id="headerTop">
-            <div id="searchBar">search</div>
+            <div id="searchBar">
+                <!-- This is a placeholder for the search icon -->
+                <svg height="22px" width="22px">
+                    <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
+                </svg>
+                <input type="text" id="searchBarInput"></input>
+            </div>
             <div id="headerTopRight">
-                <div id="notifications">notif</div>
-                <div id="accountSettings">pic</div>
-                <div id="userName">username</div>
+                <div id="notifications">
+                    <!-- This is a placeholder for the notification icon -->
+                <svg height="22px" width="22px">
+                    <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
+                </svg>
+                </div>
+                <div id="accountSettings">
+                    <!-- This is a placeholder for the smaller display picture -->
+                    <svg width="44px" height="44px">
+                        <circle cx="22px" cy="22px" r="22px" stroke="yellow" fill="yellow" stroke-width="2px">
+                        </circle>
+                    </svg>
+                </div>
+                <div id="userName">Morgan Oakley</div>
             </div>
         </div>
         <div id="headerBottom">
             <div id="headerBottomLeft">
                 <div id="displayPicture">
-                    <svg width="60px" height="60px">
-                        <circle cx="30px" cy="30px" r="30px" stroke="black" fill="yellow" stroke-width="2px">
+                    <!-- This is a placeholder for the display picture -->
+                    <svg width="62px" height="62px">
+                        <circle cx="30px" cy="30px" r="30px" stroke="yellow" fill="yellow" stroke-width="2px">
                         </circle>
                     </svg>
                 </div>
@@ -79,35 +97,54 @@
                     <div id="greeting2">Morgan Oakley (@morgan)</div>
                 </div>
             </div>
-            <div id="headerButtons">buttons!</div>
+            <div id="headerButtons">
+                <div><button id="new">New</button></div>
+                <div><button id="upload">Upload</button></div>
+                <div><button id="share">Share</button></div>
+            </div>
         </div>
     </div>
     <div id="mainBody">
         <div id="projects">
             <div id="projectHeading">Your Projects</div>
             <div id="projectCards">
-                <div id="card1" class="card">
+                <div id="card1" class="card hasShadow">
                     <div class="cardText"></div>
                 </div>
-                <div id="card2" class="card">
+                <div id="card2" class="card hasShadow">
                     <div class="cardText"></div>
                 </div>
-                <div id="card3" class="card">
+                <div id="card3" class="card hasShadow">
                     <div class="cardText"></div>
                 </div>
-                <div id="card4" class="card">
+                <div id="card4" class="card hasShadow">
                     <div class="cardText"></div>
                 </div>
-                <div id="card5" class="card">
+                <div id="card5" class="card hasShadow">
                     <div class="cardText"></div>
                 </div>
-                <div id="card6" class="card">
+                <div id="card6" class="card hasShadow">
                     <div class="cardText"></div>
                 </div>
             </div>
         </div>
-        <div id="announcements">Announcements</div>
-        <div id="trending">Trending</div>
+        <div id="announcements">Announcements
+            <div id="announcementBox" class="hasShadow">
+                <div>Site Maintenance
+                    <div id="subText">Sed a dictum arcu, hendrerit ornare justo. Nulla facilisi. Mauris dignissim, eros vel pharetra consequat, mi...<hr></div>
+                </div>
+                <div>Community Share Day
+                    <div id="subText">Nunc at mi vitae quam tristique consequat sed vel ipsum. Praesent fringilla eget orci eget... <hr></div>
+                </div>
+                <div>Updated Privacy Policy
+                    <div id="subText">Suspendisse consequat vehicula fringilla. Nullam et tincidunt leo. Suspendisse iaculis est enim, ac pretium urna accumsan sit...</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="trending">Trending
+            <div id="trendingBox" class="hasShadow"></div>
+        </div>
     </div>
 </body>
 </html>
