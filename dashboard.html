@@ -13,7 +13,7 @@
 <body>
     <div id="sidebar">
         <div id="logo">
-            <img src="" alt="">
+            <img src="svgs/view-dashboard.svg" alt="" class="largeImage whiteImage">
             <div id="logoText">Dashboard</div>
         </div>
         <div id="links">
@@ -22,23 +22,23 @@
                 <div class="linkText">Home</div>
             </div>
             <div class="sidebarLink">
-                <img src="" alt="" id="linkImg2">
+                <img src="svgs/card-account-details-outline.svg" class="smallImage whiteImage" alt="" id="linkImg2">
                 <div class="linkText">Profile</div>
             </div>
             <div class="sidebarLink">
-                <img src="" alt="" id="linkImg3">
+                <img src="svgs/message.svg" class="smallImage whiteImage" alt="" id="linkImg3">
                 <div class="linkText">Messages</div>
             </div>
             <div class="sidebarLink">
-                <img src="" alt="" id="linkImg4">
+                <img src="svgs/clock-time-five.svg" class="smallImage whiteImage" alt="" id="linkImg4">
                 <div class="linkText">History</div>
             </div>
             <div class="sidebarLink">
-                <img src="" alt="" id="linkImg5">
+                <img src="svgs/notebook-multiple.svg" class="smallImage whiteImage" alt="" id="linkImg5">
                 <div class="linkText">Tasks</div>
             </div>
             <div class="sidebarLink">
-                <img src="" alt="" id="linkImg6">
+                <img src="svgs/account-group.svg" class="smallImage whiteImage" alt="" id="linkImg6">
                 <div class="linkText">Communities</div>
             </div>
             <div class="sidebarLink">
@@ -46,15 +46,15 @@
                 <div class="linkText"></div>
             </div>
             <div class="sidebarLink">
-                <img src="" alt="" id="linkImg7">
+                <img src="svgs/cog.svg" class="smallImage whiteImage" alt="" id="linkImg7">
                 <div class="linkText">Settings</div>
             </div>
             <div class="sidebarLink">
-                <img src="" alt="" id="linkImg8">
+                <img src="svgs/help-box.svg" class="smallImage whiteImage" alt="" id="linkImg8">
                 <div class="linkText">Support</div>
             </div>
             <div class="sidebarLink">
-                <img src="" alt="" id="linkImg9">
+                <img src="svgs/shield-account.svg" class="smallImage whiteImage" alt="" id="linkImg9">
                 <div class="linkText">Privacy</div>
             </div>
         </div>
@@ -62,22 +62,17 @@
     <div id="header" class="hasShadow">
         <div id="headerTop">
             <div id="searchBar">
-                <!-- This is a placeholder for the search icon -->
-                <svg height="22px" width="22px">
-                    <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                </svg>
-                <input type="text" id="searchBarInput"></input>
+                <img src="svgs/magnify.svg" class="smallImage" alt="">
+                <input type="text" id="searchBarInput" style="padding-left: 10px"></input>
             </div>
             <div id="headerTopRight">
                 <div id="notifications">
                     <img src="svgs/bell-ring-outline.svg" class="smallImage">
                 </div>
                 <div id="accountSettings">
-                    <!-- This is a placeholder for the smaller display picture -->
-                    <svg width="44px" height="44px">
-                        <circle cx="22px" cy="22px" r="22px" stroke="yellow" fill="yellow" stroke-width="2px">
-                        </circle>
-                    </svg>
+                    <div id="avatarContainer" style="width: 44px; height: 44px;">
+                        <img class="avatar1 smallAvatar" src="avatars/2110824.jpg">
+                    </div>
                 </div>
                 <div id="userName">Morgan Oakley</div>
             </div>
@@ -85,11 +80,9 @@
         <div id="headerBottom">
             <div id="headerBottomLeft">
                 <div id="displayPicture">
-                    <!-- This is a placeholder for the display picture -->
-                    <svg width="62px" height="62px">
-                        <circle cx="30px" cy="30px" r="30px" stroke="yellow" fill="yellow" stroke-width="2px">
-                        </circle>
-                    </svg>
+                    <div id="avatarContainer" style="width: 62px; height: 62px;">
+                        <img class="largeAvatar1" src="avatars/2110824.jpg">
+                    </div>
                 </div>
                 <div id="greeting">
                     <div id="greeting1">Hi there,</div>
@@ -113,23 +106,16 @@
                             <div class="cardDescription">Nam eget lacus egestas, ullamcorper libero eget, porta risus.</div>
                         </div>
                         <div class="cardIcons">
-                            <div id="icon1">
-                                <!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg>
-                            </div>
-                            <div id="icon2">
-                                <!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg>
-                            </div>
-                            <div id="icon3">
-                                <!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg>
+                            <div id="iconDiv">
+                                <div id="icon1">
+                                    <img src="svgs/star-plus-outline.svg" class="smallImage">
+                                </div>
+                                <div id="icon2">
+                                    <img src="svgs/eye-plus-outline.svg" class="smallImage">
+                                </div>
+                                <div id="icon3">
+                                    <img src="svgs/source-fork.svg" class="smallImage">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -140,23 +126,16 @@
                             <div class="cardDescription"> Ut sit amet augue aliquet, tincidunt mi ut, congue nunc. Nullam id convallis sem, quis mollis urna. Suspendisse blandit felis vel sem pharetra eleifend.</div>
                         </div>
                         <div class="cardIcons">
-                            <div id="icon1">
-                                <!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg>
-                            </div>
-                            <div id="icon2">
-                                <!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg>
-                            </div>
-                            <div id="icon3">
-                                <!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg>
+                            <div id="iconDiv">
+                                <div id="icon1">
+                                    <img src="svgs/star-plus-outline.svg" class="smallImage">
+                                </div>
+                                <div id="icon2">
+                                    <img src="svgs/eye-plus-outline.svg" class="smallImage">
+                                </div>
+                                <div id="icon3">
+                                    <img src="svgs/source-fork.svg" class="smallImage">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -167,23 +146,16 @@
                             <div class="cardDescription">Nam mollis fermentum aliquet. Nunc a tincidunt ligula. Nulla facilisi. Curabitur in orci purus. In nec vestibulum lorem.</div>
                         </div>
                         <div class="cardIcons">
-                            <div id="icon1">
-                                <!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg>
-                            </div>
-                            <div id="icon2">
-                                <!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg>
-                            </div>
-                            <div id="icon3">
-                                <!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg>
+                            <div id="iconDiv">
+                                <div id="icon1">
+                                    <img src="svgs/star-plus-outline.svg" class="smallImage">
+                                </div>
+                                <div id="icon2">
+                                    <img src="svgs/eye-plus-outline.svg" class="smallImage">
+                                </div>
+                                <div id="icon3">
+                                    <img src="svgs/source-fork.svg" class="smallImage">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -194,21 +166,16 @@
                             <div class="cardDescription">Vivamus nisl nisl, ultricies eget massa sed, laoreet aliquam purus. Donec faucibus eu diam eget pretium. Ut vitae lorem blandit, sollicitudin felis id, bibendum augue.</div>
                         </div>
                         <div class="cardIcons">
-                            <div id="icon1"><!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg></div>
-                            <div id="icon2">
-                                <!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg>
-                            </div>
-                            <div id="icon3">
-                                <!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg>
+                            <div id="iconDiv">
+                                <div id="icon1">
+                                    <img src="svgs/star-plus-outline.svg" class="smallImage">
+                                </div>
+                                <div id="icon2">
+                                    <img src="svgs/eye-plus-outline.svg" class="smallImage">
+                                </div>
+                                <div id="icon3">
+                                    <img src="svgs/source-fork.svg" class="smallImage">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -219,21 +186,16 @@
                             <div class="cardDescription">Nullam eu turpis rhoncus, suscipit tortor nec, condimentum leo. Duis nunc nibh, faucibus sed venenatis sit amet, tincidunt quis sem. In dictum ultrices tincidunt.</div>
                         </div>
                         <div class="cardIcons">
-                            <div id="icon1"><!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg></div>
-                            <div id="icon2">
-                                <!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg>
-                            </div>
-                            <div id="icon3">
-                                <!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg>
+                            <div id="iconDiv">
+                                <div id="icon1">
+                                    <img src="svgs/star-plus-outline.svg" class="smallImage">
+                                </div>
+                                <div id="icon2">
+                                    <img src="svgs/eye-plus-outline.svg" class="smallImage">
+                                </div>
+                                <div id="icon3">
+                                    <img src="svgs/source-fork.svg" class="smallImage">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -244,23 +206,18 @@
                             <div class="cardDescription">Fusce interdum neque nec nulla venenatis tincidunt. Cras sit amet malesuada sapien, vel porta justo.</div>
                         </div>
                         <div class="cardIcons">
-                            <div id="icon1"><!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg></div>
-                            <div id="icon2">
-                                <!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg>
+                            <div id="iconDiv">
+                                <div id="icon1">
+                                    <img src="svgs/star-plus-outline.svg" class="smallImage">
+                                </div>
+                                <div id="icon2">
+                                    <img src="svgs/eye-plus-outline.svg" class="smallImage">
+                                </div>
+                                <div id="icon3">
+                                    <img src="svgs/source-fork.svg" class="smallImage">
+                                </div>
                             </div>
-                            <div id="icon3">
-                                <!-- This is a placeholder for a small icon -->
-                                <svg height="22px" width="22px">
-                                <circle cx="10px" cy="10px" r="10px" stroke="black" fill="white"></circle>
-                                </svg>
-                            </div>
-                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -282,23 +239,18 @@
         <div id="trending">Trending
             <div id="trendingBox" class="hasShadow">
                 <div class="trending">
-                    <img src="" alt="" id="trendImage1">
-                    <!-- This is a placeholder for the smaller display picture -->
-                    <svg width="44px" height="44px">
-                        <circle cx="22px" cy="22px" r="22px" stroke="yellow" fill="yellow" stroke-width="2px">
-                        </circle>
-                    </svg>
+                    <div id="avatarContainer" style="width: 44px; height: 44px;">
+                        <img class="avatar2 smallAvatar" src="avatars/2110824.jpg">
+                    </div>
                     <div class="trendDetail">
                         <div id="trendName1">@tegan</div>
                         <div id="trendSubtext1">World Peace Builder</div>
                     </div>
                 </div>
                 <div class="trending">
-                    <img src="" alt="" id="trendImage2">
-                    <!-- This is a placeholder for the smaller display picture -->
-                    <svg width="44px" height="44px">
-                        <circle cx="22px" cy="22px" r="22px" stroke="yellow" fill="yellow" stroke-width="2px">
-                        </circle>
+                    <div id="avatarContainer" style="width: 44px; height: 44px;">
+                        <img class="avatar1 smallAvatar" src="avatars/2110824.jpg">
+                    </div>
                     </svg>
                     <div class="trendDetail">
                         <div id="trendName2">@morgan</div>
@@ -306,24 +258,18 @@
                     </div>
                 </div>
                 <div class="trending">
-                    <img src="" alt="" id="trendImage3">
-                    <!-- This is a placeholder for the smaller display picture -->
-                    <svg width="44px" height="44px">
-                        <circle cx="22px" cy="22px" r="22px" stroke="yellow" fill="yellow" stroke-width="2px">
-                        </circle>
-                    </svg>
+                    <div id="avatarContainer" style="width: 44px; height: 44px;">
+                        <img class="avatar3 smallAvatar" src="avatars/2110824.jpg">
+                    </div>
                     <div class="trendDetail">
                         <div id="trendName3">@kendall</div>
                         <div id="trendSubtext3">Life Changing App</div>
                     </div>
                 </div>
                 <div class="trending">
-                    <img src="" alt="" id="trendImage4">
-                    <!-- This is a placeholder for the smaller display picture -->
-                    <svg width="44px" height="44px">
-                        <circle cx="22px" cy="22px" r="22px" stroke="yellow" fill="yellow" stroke-width="2px">
-                        </circle>
-                    </svg>
+                    <div id="avatarContainer" style="width: 44px; height: 44px;">
+                        <img class="avatar4 smallAvatar" src="avatars/2110824.jpg">
+                    </div>
                     <div class="trendDetail">
                         <div id="trendName4">@alex</div>
                         <div id="trendSubtext4">No Traffic Maker</div>
@@ -332,5 +278,6 @@
             </div>
         </div>
     </div>
+    <a href="http://www.freepik.com">Avatars Designed by Freepik</a>
 </body>
 </html>

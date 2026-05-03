@@ -59,7 +59,7 @@ body {
 .sidebarLink {
     height: 30px;
     display: grid;
-    grid-template-columns: 25px 25px 1fr;
+    grid-template-columns: 10px 15px 15px 1fr;
     gap: 10px;
 }
 
@@ -67,6 +67,10 @@ body {
     grid-row: 2 / 3;
     display: grid;
     gap: 10px;
+}
+
+.linkText {
+    grid-column: 4 / 5;
 }
 
 #header {
@@ -237,6 +241,9 @@ body {
     padding: 15px;
     grid-area: 1 / 2 / 2 / 3;
     padding-top: 40px;
+    height: 135px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .cardDescription {
@@ -251,7 +258,13 @@ body {
 .cardIcons {
     display: grid;
     grid-area: 2 / 2 / 3 / 3;
-    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+}
+
+#iconDiv {
+    display: flex;
+    justify-content: space-between;
 }
 
 #mainBody #announcements {
@@ -300,12 +313,11 @@ body {
 
 #trendingBox > div {
     display: grid;
-    grid-template: 1fr 1fr / 1fr 3fr;
+    grid-template: 1fr / 1fr 3fr;
 }
 
-/* This is temporary, replace it. */
-.trending > svg {
-    grid-area: 1 / 1 / 3 / 2;
+.trending > img {
+    grid-area: 1 / 1 / 2 / 2;
     display: grid;
 }
 
@@ -339,4 +351,60 @@ div[id^="trendSubtext"] {
 
 hr {
     opacity: 0.3;
+}
+
+.largeImage {
+    height: 60px;
+    width: 60px;
+}
+
+.profileImage {
+    height: 62px;
+    width: 62px;
+}
+
+.largeProfileImage {
+    height: 44px;
+    width: 44px;
+}
+
+#avatarContainer {
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+}
+
+.avatar1 {
+    width: 150px;
+    height: auto;
+    object-position: left -7px top -10px;
+    overflow: hidden;
+}
+
+.avatar2 {
+    width: 150px;
+    height: auto;
+    object-position: left -95px top -10px;
+    overflow: hidden;
+}
+
+.avatar3 {
+    width: 150px;
+    height: auto;
+    object-position: left -7px top -95px;
+    overflow: hidden;
+}
+
+.avatar4 {
+    width: 150px;
+    height: auto;
+    object-position: left -96px top -95px;
+    overflow: hidden;
+}
+
+.largeAvatar1 {
+    width: 225px;
+    height: auto;
+    overflow: hidden;
+    object-position: left -14px top -7px;
 }
